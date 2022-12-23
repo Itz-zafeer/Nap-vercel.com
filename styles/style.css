@@ -50,7 +50,7 @@ body {
 .our-goal-bg-text{
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-color: #B1B1B1;
-    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-width: 0.02604166666vw;
     text-transform: uppercase;
     opacity: 0.57
 }
