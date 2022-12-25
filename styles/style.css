@@ -55,5 +55,7 @@ body {
     opacity: 0.57
 }
 
-
+textarea::-webkit-scrollbar{
+    width: 0px;
+}
 
