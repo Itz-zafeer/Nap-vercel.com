@@ -59,3 +59,17 @@ textarea::-webkit-scrollbar{
     width: 0px;
 }
 
+
+
+.Send:hover #Path_3,
+.Send:hover #Path_2{
+    stroke: #fff;
+    transition: all .5s ease-in-out;
+
+}
+.Send:hover svg{
+    transform: translateX(1.04166666667vw);
+    transition: all .5s ease-in-out;
+
+}
+
