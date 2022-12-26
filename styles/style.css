@@ -67,9 +67,14 @@ textarea::-webkit-scrollbar{
     transition: all .5s ease-in-out;
 
 }
-.Send:hover svg{
+.Send:hover svg,
+.shop:hover.shop img
+{
     transform: translateX(1.04166666667vw);
     transition: all .5s ease-in-out;
 
 }
+
+
+
 
