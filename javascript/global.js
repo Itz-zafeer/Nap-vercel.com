@@ -7,7 +7,9 @@ textarea.addEventListener("keyup",e => {
 
 
 
-
+function scrollDownn(){
+    window.scrollTo(0,window.innerHeight)
+}
 
 
 
