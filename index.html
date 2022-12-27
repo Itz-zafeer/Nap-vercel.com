@@ -9,7 +9,9 @@
   <script src="./javascript/tailwind.js"></script>
   <script src="./tailwind.config.js"></script>
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/swiper-bundle.min.css">
 </head>
+
 
 <body>
 
@@ -59,7 +61,7 @@
 
   <section class="hero pb-[1.92708333333vw]   mt-[6.5625vw]  relative ">
     <div class="main    ml-[auto]        w-[93.81vw]  flex  items-center justify-between  ">
-      <div class="content  flex flex-col gap-y-[1.66666666667vw] lg:pl-[0px]  ">
+      <div class="content  flex flex-col gap-y-[1.66666666667vw] pl-[0px]  ">
         <h1 class="   relative font-[500] text-[#262626] leading-[3.17708333333vw] tracking-[0px]   
                 text-[2.65625vw]
                 ">
@@ -147,6 +149,38 @@
 
 
   </section>
+
+<section class="why-nap pt-[9.375vw]">
+  <div class="main-whnap w-[93.75vw] ml-[auto] w-[93.75vw] flex justify-between gap-x-[3.30729166667vw]">
+    <div class="swiper mySwiper w-[53.0208333333vw]">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide w-[1018px] h-[732px]"><img src="./assets/Why Nap/323.png" alt=""></div>
+        <div class="swiper-slide w-[1018px] h-[732px]"><img src="./assets/Why Nap/6546546.png" alt=""></div>
+        <div class="swiper-slide w-[1018px] h-[732px]"><img src="./assets/Why Nap/654765.png" alt=""></div>
+        <div class="swiper-slide w-[1018px] h-[732px]"><img src="./assets/Why Nap/e4325345.png" alt=""></div>
+        <div class="swiper-slide w-[1018px] h-[732px]"><img src="./assets/Why Nap/5453.png" alt=""></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="cntant-side w-[37.421875vw] relative pt-[7.58072916667vw] flex flex-col gap-y-[1.26458333333vw]">
+<h1 class="hero-bg-text text-[5.72916666667vw] text-[#000000] font-[600] opacity-[0.3] tracking-[0.57291666666vw] leading-[4.79166666667vw]   absolute top-[0vw] left-[0.57210416666vw]">WHY NAP ?</h1>
+<h1 class="text-[2.65625vw] text-[#262626] font-[500] leading-[3.17708333333vw]
+uppercase">WHY NAP ?</h1>
+<span class="text-[1.35416666667vw] text-[#262626] leading-[2.39583333333vw] 
+
+">5 Reasons To Partner With NAP</span>
+
+    </div>
+    
+  </div>
+  <div class="cntent-box">
+
+  </div>
+  
+
+</section>
 
 
   <section class="our-services bg-[#191913] pt-[9.375vw] ">
@@ -277,7 +311,7 @@
       </div>
 
       <div class="pdts-main  w-[87.5vw] flex justify-between flex-wrap 
-      mx-[auto] mt-[4.19010416667vw] gap-y-[20px]"> 
+      mx-[auto] mt-[4.19010416667vw] gap-y-[1.04166666667vw]"> 
         <div
           class="products  before:content-[''] relative before:bg-[#6D6E71] before:w-[100%] before:h-[100%] before:absolute before:top-[0] before:left-[0] before:opacity-[0.1] overflow-hidden flex w-[28.0729166667vw] pt-[2.08333333333vw] justify-between whitespace-nowrap pl-[2.08333333333vw] gap-x-[2.70625vw] h-[15.2083333333vw] ">
 
@@ -518,7 +552,24 @@ px-[3.85416666667vw] py-[0.703125vw] bg-[#191919] z-[99]
   </section>
 
 
+  
+
+
   <script src="./javascript/global.js"></script>
+  <script src="./javascript/swiper-bundle.min.js"></script>
+  <script>
+  var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+</script>
+
 </body>
 
 </html>
