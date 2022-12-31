@@ -80,53 +80,38 @@ textarea::-webkit-scrollbar {
 }
 
 .Send:hover svg,
-.shop:hover.shop img {
+.shop:hover.shop svg {
     transform: translateX(1.04166666667vw);
     transition: all .5s ease-in-out;
 }
 
 
 
-.our-goal-arrow::before{
-    content: url(../assets/Group\ 5.svg);
-    width: 29.4661458333vw;
-    height: 32.1328125vw;
+/* .our-goal-arrow::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
     position: absolute;
     top: 0;
     left: 0;
+    background: url(../assets/Group\ 5.png);
+    background-repeat: no-repeat;
+background-position: center center;
+background-size: contain;
+
+} */
 
 
-}
 
-
-
-.blur-goal::before{
-    content: "";
-    /* backdrop-filter: url(../assets/Ellipse\ 2.svg); */
-    /* background: url(../assets/Ellipse\ 2.svg) ; */
-    /* backdrop-filter: url(../assets/Ellipse\ 2.svg) blur(4px); */
-    /* backdrop-filter: url("../assets/Ellipse\ 2.svg") ; */
-    /* background-image: url("data:image/svg+xml,***<%3Csvg xmlns='http://www.w3.org/2000/svg' width='576.713' height='117.522' viewBox='0 0 576.713 117.522'%3E%3Cellipse id='Ellipse_2' data-name='Ellipse 2' cx='231.356' cy='1.761' rx='231.356' ry='1.761' transform='translate(57 57)' fill='%23fff'/%3E%3C/svg%3E>***"); */
-/* 
-     position: absolute;
-    top: 0px;
-    left: 0;
-
-    
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(19px);
-    background-color: #FFFFFF;  */
-
-}
-
-
-.blur-goal{
-    /* background: url(../assets/Ellipse\ 2.svg); */
-    /* backdrop-filter: url(../assets/Ellipse\ 2.svg); */
-    background-color: #FFFFFF;  
-    backdrop-filter: blur(19px);
-    
+.overlay{
+    width: 99.9479166667vw;
+    height: 31.09375vw;
+    position: absolute;;
+    background: transparent linear-gradient(180deg, #6D6E71 0%, #44444747 46%, #37373900 100%) 0% 0% no-repeat padding-box;
+opacity: 0.3;
+top: 0;
+left: 0.05208333333vw;
 
 }
 
