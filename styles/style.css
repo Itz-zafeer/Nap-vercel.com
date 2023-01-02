@@ -117,7 +117,7 @@ left: 0.05208333333vw;
     top: 2.86458333333vw;
   }
 
-  .den{
+  .contact .error .den{
     position: absolute;
     top: 1.875vw;
     display: block !important;
@@ -135,7 +135,7 @@ left: 0.05208333333vw;
     position: absolute;
     top: 0.78125vw;
   }
-.errorHidden.ch{
+  .contact .error .errorHidden.ch{
     display: block;
     position: absolute;
     top: 2.39583333333vw !important;
