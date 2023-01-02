@@ -100,9 +100,68 @@ left: 0.05208333333vw;
 
 }
 
+
+
 .error{
+    position: relative;
+  }
+  .error .errorHidden{
     display: block;
+    position: absolute;
+  top: calc(100% - 4px);
+  font-size: 0.9375vw;
+  }
+  .contact .error .errorHidden{
+    display: block;
+    position: absolute;
+    top: 2.86458333333vw;
+  }
+
+  .den{
+    position: absolute;
+    top: 1.875vw;
+    display: block !important;
+  }
+  .contact .error .dden{
+      position: absolute;
+      top: 2.55208333333vw;
+    display: block !important;
+
+  }
+
+
+  .contact .error .errorHidden.ch{
+    display: block;
+    position: absolute;
+    top: 0.78125vw;
+  }
+.errorHidden.ch{
+    display: block;
+    position: absolute;
+    top: 2.39583333333vw !important;
 }
+
+   
+  label.error{
+    color: #EB041B;
+    position: relative;
+    top: -6px; 
+  }
+
+  .error + .errorHidden{
+    display: block;
+   }
+  .sizeError .sizeErrorHidden{
+    display: block;
+  }
+  .fileName .file{
+    display: block;
+  }
+  .cardArrow .arrow {
+    position: relative;
+  }
+
+
 .listp p::before{
     content: '';
     width: 0.39166666666vw;
