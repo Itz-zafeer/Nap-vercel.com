@@ -49,6 +49,7 @@ body {
     font-family: "poppins";
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
 }
 
 .hero-bg-text {
@@ -111,11 +112,11 @@ left: 0.05208333333vw;
   top: calc(100% - 4px);
   font-size: 0.9375vw;
   }
-  .contact .error .errorHidden{
+  /* .contact .error .errorHidden{
     display: block;
     position: absolute;
     top: 2.86458333333vw;
-  }
+  } */
 
   .contact .error .den{
     position: absolute;
@@ -130,11 +131,11 @@ left: 0.05208333333vw;
   }
 
 
-  .contact .error .errorHidden.ch{
+  /* .contact .error .errorHidden.ch{
     display: block;
     position: absolute;
     top: 0.78125vw;
-  }
+  } */
   .contact .error .errorHidden.ch{
     display: block;
     position: absolute;
