@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content=" initial-scale=1, maximum-scale=1, width=device-width" />
+  <title>Document</title>
+  <script src="./javascript/tailwind.js"></script>
+  <script src="./tailwind.config.js"></script>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./styles/aos.css">
+</head>
+
+
+<body>
+
+
+
+
+
+  <nav id="navbar" class=" py-[16px] md:py-[1.14583333333vw] z-[555] absolute">
+    <div class="main-nav flex  justify-between items-center  w-[88.6458333333vw] ml-[4.0625vw] mr-[7.29166666667vw]   md:gap-x-[12.3958333333vw]
+        
+            ">
+      <a href="/">
+
+        <img src="./assets//NAP logo (1)5.png" alt="logo" class=" w-[120px] md:w-[17.0833333333vw]
+              md:h-[8.22916666667vw] 
+              ">
+
+      </a>
+      <ul class="links  hidden  md:flex  items-center gap-x-[1.77083333333vw]
+      lg:whitespace-nowrap  pb-[1.14583333333vw] ">
+        <li class="mr-[0.46875vw]"><a href="#about-us" class="font-[300]  
+                text-[0.9375vw] text-[#6D6E71]   ">About Us</a></li>
+        <li class=""><a href="#prouduct-portfolio" class="font-[300] 
+                        text-[0.9375vw] text-[#6D6E71] ">Product Portfolio</a></li>
+        <li class="mr-[0.15625vw]"><a href="#our-services" class="font-[300] 
+                text-[0.9375vw] text-[#6D6E71] ">Our Services</a></li>
+        <li class="mr-[0.67708333333vw]"><a href="#why-nap" class="font-[300] 
+                text-[0.9375vw] text-[#6D6E71] ">Why NAP</a></li>
+        <li><a href="#contact-us" class="font-[300]
+                text-[0.9375vw] text-[#6D6E71] ">Contact Us</a></li>
+      </ul>
+      <a href="" class="shop  hidden md:flex items-center  text-[0.9375vw] text-[#D30D2B] font-[400] 
+      ml-[4.11458333333vw] lg:whitespace-nowrap pb-[1.14583333333vw]
+      ">
+        <span class=""> Shop
+          online</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+          class=" h-[1.5625vw] w-[1.5625vw] ml-[0.52083333333vw]">
+          <g id="Icon_feather-arrow-down-circle" data-name="Icon feather-arrow-down-circle"
+            transform="translate(30 0) rotate(90)">
+            <path id="Path_1" data-name="Path 1" d="M30,15A15,15,0,1,0,15,30,15,15,0,0,0,30,15Z"
+              transform="translate(0 0)" fill="#d30d2b" />
+            <path id="Path_2" data-name="Path 2" d="M0,6,6,0l6,6" transform="translate(9 9)" fill="none"
+              stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+            <path id="Path_3" data-name="Path 3" d="M0,12V0" transform="translate(15 9)" fill="#d30d2b" stroke="#FFFFFF"
+              stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+          </g>
+        </svg>
+
+
+      </a>
+
+      <div class="containr block md:hidden" onclick="sidebarOpen()">
+        <div class="menu" id="show-nav">
+            <div>
+                <span class="line-1"></span>
+                <span class="line-2 "></span>
+                <span class="line-3 "></span>
+            </div>
+        </div>
+    </div>
+
+     
+
+    </div>
+<div id="sidebar" class="sidebar block pointer-events-none  md:hidden fixed w-[100%] 
+min-h-[100vh] top-[0] left-[0]
+flex items-center opacity-[0]
+">
+<div class="main-side w-[87%] mx-[auto] h-[70vh] ">
+  <ul class="links  
+
+  lg:whitespace-nowrap  ">
+    <li class="py-[15px] border-b-[1px] border-[#FFFFFF]"><a href="#about-us" class="font-[300]  
+            text-[18px] text-[#FFFFFF]   ">About Us</a></li>
+    <li class="py-[15px] border-b-[1px] border-[#FFFFFF]"><a href="#prouduct-portfolio" class="font-[300] 
+                    text-[18px] text-[#FFFFFF] ">Product Portfolio</a></li>
+    <li class="py-[15px] border-b-[1px] border-[#FFFFFF]"><a href="#our-services" class="font-[300] 
+            text-[18px] text-[#FFFFFF] ">Our Services</a></li>
+    <li class="py-[15px] border-b-[1px] border-[#FFFFFF]"><a href="#why-nap" class="font-[300] 
+            text-[18px] text-[#FFFFFF] ">Why NAP</a></li>
+    <li class="py-[15px] border-b-[1px] border-[#FFFFFF]"><a href="#contact-us" class="font-[300]
+            text-[18px] text-[#FFFFFF] ">Contact Us</a></li>
+  </ul>
+  <a href="" class="shop  h-[20vh] flex items-center justify-center  text-[18px] text-[#D30D2B] font-[400] 
+   lg:whitespace-nowrap 
+  ">
+    <span class=""> Shop
+      online</span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+      class=" h-[25px] w-[25px] ml-[10px]">
+      <g id="Icon_feather-arrow-down-circle" data-name="Icon feather-arrow-down-circle"
+        transform="translate(30 0) rotate(90)">
+        <path id="Path_1" data-name="Path 1" d="M30,15A15,15,0,1,0,15,30,15,15,0,0,0,30,15Z"
+          transform="translate(0 0)" fill="#d30d2b" />
+        <path id="Path_2" data-name="Path 2" d="M0,6,6,0l6,6" transform="translate(9 9)" fill="none"
+          stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+        <path id="Path_3" data-name="Path 3" d="M0,12V0" transform="translate(15 9)" fill="#d30d2b" stroke="#FFFFFF"
+          stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+      </g>
+    </svg>
+
+
+  </a>
+</div>
+ 
+</div>
+
+  </nav>
+
+  
+
+
+  <section class="hero min-h-[100vh] lg:min-h-[unset] pt-[50px] lg:pt-[0px] relative lg:h-[56.25vw] flex  items-center overflow-x-hidden">
+    <div class="overlay pointer-events-none">
+    </div>
+
+    <div class="main mx-[auto] gap-y-[40px] w-[90%] justify-center lg:justify-start lg:mr-[0px]   lg:ml-[auto]       
+    lg:w-[93.7739583333vw]  flex  lg:items-center  lg:mb-[-13.2291666667vw] flex-col lg:flex-row
+     ">
+      <div  class="content max-w-[450px] lg:max-w-[unset] lg:w-[33.125vw]  flex flex-col gap-y-[22px] lg:gap-y-[1.66666666667vw]   justify-end 
+      lg:h-[14.2708333333vw]
+
+      ">
+    
+        <h1   data-aos="fade-up" data-aos-duration="800"  class="   relative max-w-[320px] font-[500] text-[#262626] lg:static lg:max-w-[unset] lg:leading-[3.17708333333vw] tracking-[0px]   
+                lg:text-[2.65625vw] text-[24px] leading-[32px] lg:mb-[0.28645833333vw] 
+                ">
+          ONE-STOP-SHOP
+          FOR ALL YOUR AUTO PARTS NEEDS
+          <img  data-aos="fade"  data-aos-duration="800" data-aos-delay="800"  src="./assets/round-arrow.svg" alt="" class="absolute
+          w-[77px] h-[82px] top-[-20%] left-[-5%]
+          lg:top-[-2.2vw] lg:left-[-1.9vw] lg:w-[8.84895833333vw] 
+          lg:h-[9.74270833333vw]
+                        
+                        ">
+        </h1>    
+      
+        <p data-aos="fade-down" data-aos-duration="800"  class="  text-[14px] leading-[20px]  lg:w-[33.4895833333vw]  font-[300] text-[#191919] lg:leading-[1.41927083333vw]  lg:text-[0.9375vw] 
+                ">National Auto Parts Company Is A Customer-Centric Solution Provider Aiming To Offer Saudi Arabia’s
+          Most Comprehensive Digital Marketplace For Auto Parts, Through Both B2B And B2C Platforms, Supported By An
+          Industry Leading Catalogue.</p>
+      </div>
+      <h1
+        class="hero-bg-text text-[35px] text-center top-[50%] leading-[40px] lg:text-[5.72916666667vw] text-[#000000] font-[600] opacity-[0.2] lg:tracking-[0.57291666666vw] lg:leading-[8.07291666667vw] absolute lg:top-[16.1197916667vw] lg:left-[24.3229166667vw] z-[-1] lg:whitespace-nowrap">
+        NATIONAL AUTO PARTS
+      </h1>
+      <div class="hero-img max-w-[850px] max-h-[450px] mx-[auto] lg:max-w-[unset] 
+      lg:max-h-[unset]
+      lg:w-[60.5239583333vw]   lg:h-[45.3932291667vw]  lg:absolute lg:top-[10.8567708333vw] lg:right-[-6.66979166667vw]
+            
+
+            ">
+
+        <img data-aos="fade" data-aos-delay="500" data-aos-duration="800" src="./assets/Lovepik_com-401590044-cool-car-scene.png" alt="" class="hidden md:block w-[100%] h-[100%]">
+        <img src="./assets/mobile car.png" alt="" class="block md:hidden w-[100%] h-[100%]">
+        <img data-aos="fade-right" data-aos-duration="800" data-aos-delay="800" src="./assets/Group 80.png" alt=""
+          class="hidden  lg:block lg:w-[14.3302083333vw]   lg:h-[16.678125vw] absolute lg:bottom-[2.6296875vw] lg:right-[20vw]">
+        <div
+        data-aos="fade-left" data-aos-duration="800" data-aos-delay="800"
+          class="hidden  lg:block lg:w-[3.85416666667vw]   lg:h-[21.7708333333vw] absolute  lg:bottom-[3.48958333333vw] lg:right-[34.3229166667vw]">
+
+          <img src="./assets/Mask Group 17.png" alt="" class=" 
+          
+          w-[100%] h-[100%]">
+          <span class=" lg:w-[3.85416666667vw]
+           h-[3.85416666667vw]
+           absolute  lg:bottom-[-1.82291666667vw] lg:right-[-0.52083333333vw]">
+            <img src="./assets/Ellipse 11.png" alt="" class="w-[100%] h-[100%] object-contain">
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="lottie w-[35px] lg:w-[2.60416666667vw] lg:h-[2.60416666667vw]  absolute left-[50%] bottom-[1.04166666667vw]
+    transform translate-x-[-50%]
+    ">
+      <lottie-player src="./json/scroll-down.json" background="transparent" speed="1"
+        style="width: 100%; height: 100%;  " loop autoplay onclick="scrollDownn()"></lottie-player>
+    </div>
+
+  </section>
+  <section class="ourgoal items-start 
+   flex-col 
+  py-[60px] 
+   bg-[#191919]  lg:h-[48.1770833333vw] lg:flex lg:flex-row lg:items-center lg:pt-[0px] lg:pl-[0px] lg:pb-[0px] relative lg:min-h-[unset]">
+    <div data-aos="fade" data-aos-duration="800" data-aos-delay="300" class="our-goal-arrow hidden  w-[250px] h-[250px] bottom-[0%] transform rotate-[-4deg] left-[23%] lg:w-[29.4661458333vw] lg:h-[32.1328125vw]  absolute lg:block lg:top-[3.12239583333vw] 
+    lg:left-[10.1747395833vw] lg:rotate-[unset]
+     ">
+      <img src="./assets/Group 5.png" alt="" class="w-[100%] h-[100%] object-contain">
+    </div>
+
+
+
+
+    <img  data-aos="fade" data-aos-duration="800" src="./assets/XXXXXX000000331.png" alt=""
+      class="absolute w-[300px] bottom-[0%] left-[10%] hidden lg:block lg:top-[15.625vw] lg:left-[0] lg:w-[39.9510416667vw] lg:h-[22.4723958333vw]">
+    <img data-aos="fade" data-aos-duration="800" src="./assets/Ellipse 2.png" alt="" class="w-[24.0994791667vw] h-[0.18333333333vw] absolute left-[9.9765625vw]
+bottom-[9.14635416667vw] blur-[19px] bg-[#FFFFFF] object-contain
+">
+
+
+
+    <div class="main items-start gap-y-[60px] w-[87%] mx-[auto]  flex-col lg:pr-[0px]  lg:w-[52.7864583333vw] flex  lg:items-center lg:flex-col lg:ml-[auto] lg:mr-[6.21510416667vw]
+
+    lg:gap-y-[9.390625vw] lg:h-[30.328125vw]
+    
+    ">
+
+      <div class="col1main    ">
+        <div class="col1  gap-y-[8px] flex flex-col  lg:gap-y-[1.04166666667vw]
+        ">
+
+          <h1 data-aos="fade-up" data-aos-duration="800" class=" text-[22px] leading-[32px]
+          lg:text-[2.65625vw] text-[#FFFFFF] font-[500]   lg:leading-[3.17708333333vw]  uppercase
+          ">THE MOST COMPREHENSIVE MARKETPLACE FOR SPARE PARTS IN KSA
+          </h1>
+          <div data-aos="fade-down" data-aos-duration="800" class="gap-y-[8px] flex flex-col  lg:gap-y-[1.04166666667vw]">
+            <p class="text-[14px] leading-[20px]  lg:mt-[0.20833333333vw] font-[300] text-[#FFFFFF] lg:leading-[1.41vw]  lg:text-[0.9375vw] ">Under the
+              umbrella of ADG and Petromin Corporation, we have adopted the corporate philosophy of Omnipreneurship
+              supported by our values and principles.</p>
+            <p class=" text-[14px] leading-[20px]  font-[300] text-[#FFFFFF] lg:leading-[1.41vw]  lg:text-[0.9375vw] ">Our goal is to become the #1 auto
+              parts solutions provider in the Kingdom with a globally transferable model, aiming to be in the top 3 of any
+              international market we operate in.</p>
+          </div>
+        
+        </div>
+      </div>
+      <div class="col2main pl-[12px] pr-[12px] justify-between gap-y-[60px] flex-col lg:pl-[0px] 
+      lg:pr-[0px]
+      lg:flex-row flex    w-[100%] lg:justify-end lg:gap-x-[2.8125vw] lg:flex-row ">
+        <div
+          class="col2amain before:w-[2px]  before:h-[56px] 
+          before:left-[-10px] before:bottom-[2px] before:content-[''] before:absolute lg:before:left-[-1.27604166667vw] lg:before:bottom-[0vw] before:bg-[#FFFFFF] lg:before:w-[0.15625vw] lg:before:h-[5.46875vw] lg:w-[24.84375vw] relative">
+          <div class="col2a   flex flex-col gap-y-[0.78125vw] ">
+            <h1 data-aos="fade" data-aos-duration="800" data-aos-delay="300" class="our-goal-bg-text text-[40px] lg:text-[4.16666666667vw] text-[#707070] 
+            top-[-34px] 
+            lg:font-[600] lg:tracking-[0.57291666666vw] lg:leading-[5.83333333333vw] lg:w-[28.2291666667vw] absolute 
+              lg:top-[-5.3125vw] lg:left-[-0.3125vw]  ">
+              VISION</h1>
+            <h4 data-aos="fade-up" data-aos-duration="800" data-aos-delay="500"  class="text-[20px] leading-[32px] lg:text-[1.875vw] text-[#FFFFFF] font-[200]   lg:leading-[2.65625vw]
+            z-10 
+            ">VISION</h4>
+            <p data-aos="fade-down" data-aos-duration="800" data-aos-delay="500"  class="text-[14px] leading-[20px] font-[300] lg:font-[500] text-[#FFFFFF] lg:leading-[1.45833333333vw]  lg:text-[0.9375vw] ">To be the
+              champion
+              of sustainable and future-ready aftermarket auto parts solutions</p>
+          </div>
+        </div>
+        <div
+          class="col2bmain before:w-[2px]  before:h-[56px] 
+          before:left-[-10px] before:bottom-[2px]
+          before:content-[''] before:absolute lg:before:left-[-1.27604166667vw] lg:before:bottom-[0vw] before:bg-[#FFFFFF] lg:before:w-[0.15625vw] lg:before:h-[5.46875vw]   relative">
+          <div class="col2b   flex flex-col gap-y-[10px] lg:gap-y-[0.72916666666vw] lg:w-[23.8020833333vw] ">
+            <h1
+            data-aos="fade" data-aos-duration="800" data-aos-delay="800"
+              class="our-goal-bg-text text-[40px] top-[-34px] lg:text-[4.16666666667vw] text-[#707070] font-[600] lg:tracking-[0.41666666666vw]  lg:w-[28.2291666667vw] absolute lg:top-[-5.3125vw] lg:left-[-0.3125vw]  ">
+              MISSION</h1>
+            <h4 data-aos="fade-up" data-aos-duration="800" data-aos-delay="1100" class="text-[20px] leading-[32px] lg:text-[1.875vw] text-[#FFFFFF] font-[200]   lg:leading-[2.65625vw]
+            z-10
+            ">MISSION</h4>
+            <p data-aos="fade-down" data-aos-duration="800" data-aos-delay="1100" class="text-[14px] leading-[20px] font-[300] lg:font-[500] text-[#FFFFFF] lg:leading-[1.45833333333vw]  lg:text-[0.9375vw] ">To
+              disrupt the
+              aftermarket auto parts ecosystem with high-quality products and reliable solutions</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class=" block pt-[40px]  lg:hidden">
+      
+        <img src="./assets/XXXXXX000000331.png" alt="" class="w-[100%] h-[250px] 
+        mx-[auto] object-contain
+        ">
+
+    </div>
+
+
+
+  </section>
+
+  <section  id="prouduct-portfolio" class="product-portfolio lg:flex lg:items-center lg:justify-center lg:h-[107.604166667vw] 
+  
+  ">
+
+    <div class="pp-main gap-y-[40px] py-[60px] lg:h-[93.1734375vw] flex flex-col justify-between
+    lg:pt-[4.45572916667vw] lg:pb-[1.19427083333vw] lg:mt-[-5.0359375vw] relative
+    ">
+      <div class="pp-cntent  w-[87%]  mx-[auto] lg:w-[unset] lg:mx-[unset] ">
+        <h1   class="hero-bg-text text-[35px] leading-[40px] top-[3.5%] left-[5%]  lg:text-[5.72916666667vw] text-[#000000] font-[600] opacity-[0.3] lg:tracking-[0.57291666666vw] lg:leading-[8.07291666667vw]   absolute lg:top-[0vw] 
+          lg:left-[-0.49479166666vw]">
+          Product PORTFOLIO</h1>
+        <h1  data-aos="fade-up"  data-aos-duration="800" class="relative font-[500] leading-[32px]
+        text-[22px] text-[#262626] lg:leading-[3.75vw] lg:tracking-[0px]   
+        lg:text-[2.65625vw]">PRODUCT PORTFOLIO</h1>
+      </div>
+
+      <div class="pdts-main  w-[87%]  gap-y-[15px]  flex justify-between flex-wrap 
+      mx-[auto] lg:w-[87.5vw]  lg:gap-x-[unset] lg:gap-y-[1.04166666667vw]">
+        <div data-aos="fade" data-aos-duration="800" 
+          class="products  before:content-[''] relative md:w-[32%] w-[49%] h-[130px] pt-[8px] pl-[8px]
+          flex-col justify-between
+          before:bg-[#6D6E71] before:w-[100%] before:h-[100%] before:absolute before:top-[0] before:left-[0] before:opacity-[0.1] overflow-hidden flex lg:w-[28.0729166667vw] lg:pt-[2.08333333333vw] lg:justify-between lg:whitespace-nowrap lg:pl-[2.08333333333vw] lg:gap-x-[2.70625vw] lg:h-[15.2083333333vw] ">
+
+          <h5 class="text-[18px] leading-[22px] lg:text-[1.875vw]  text-[#191919] font-[400] lg:leading-[2.65625vw]">
+            Lubricants
+          </h5>
+          <!-- <img src="./assets/product-portfolio/Group 68 withshadow.png" alt=""
+            class="
+            w-[100px] h-[85px] mb-[8px] mx-[auto]
+            lg:w-[16.3541666667vw] lg:mb-[0px] lg:h-[13.75vw] lg:absolute top-[1.2671875vw] left-[14.4770833333vw] object-contain"> -->
+          <img src="./assets/product-portfolio/Group 68.png" alt=""
+            class="
+            w-[100px] h-[85px] mb-[8px] mx-[auto]
+            lg:w-[16.3541666667vw] lg:mb-[0px] lg:h-[13.75vw] lg:absolute top-[1.2671875vw] left-[14.4770833333vw] object-contain">
+        </div>
+        <div data-aos="fade" data-aos-duration="800" data-aos-delay="200"
+          class="products  before:content-[''] relative  md:w-[32%] w-[49%] h-[130px] pt-[8px] pl-[8px] before:bg-[#6D6E71] before:w-[100%] before:h-[100%] before:absolute before:top-[0] before:left-[0] before:opacity-[0.1] overflow-hidden  lg:w-[28.0729166667vw] lg:pt-[2.08333333333vw]   lg:pl-[2.08333333333vw] lg:h-[15.2083333333vw]">
+
+          <h5 class="text-[18px] leading-[22px] lg:text-[1.875vw]  text-[#191919] font-[400] lg:leading-[2.65625vw]">
+            Filtration
+          </h5>
+          <img src="./assets/product-portfolio/wepik-photo-mode-20221114-12245.png" alt=""
+            class="h-[75%] mx-[auto] lg:w-[22.4479166667vw] lg:h-[15vw] lg:absolute top-[1.22448979592vw] left-[6.66666666667vw] object-contain">
+        </div>
+        <div data-aos="fade" data-aos-duration="800" data-aos-delay="400"
+          class="products  before:content-[''] relative md:w-[32%] w-[49%] h-[130px] pt-[8px] pl-[8px] 
+          flex-col
+          before:bg-[#6D6E71] before:w-[100%] before:h-[100%] before:absolute before:top-[0] before:left-[0] before:opacity-[0.1] overflow-hidden flex lg:w-[29.2708333333vw] lg:pt-[2.08333333333vw] justify-between lg:whitespace-nowrap lg:pl-[2.08333333333vw] lg:h-[21.09375vw] ">
+
+          <h5 class="text-[18px] leading-[22px] lg:text-[1.875vw]  text-[#191919] font-[400] lg:leading-[2.65625vw]">
+            Braking
+          </h5>
+          <img src="./assets/product-portfolio/Asset 1.png" alt=""
+            class="w-[100px] h-[70px] mb-[16px] mx-[auto] lg:w-[16.1979166667vw] lg:h-[14.9479166667vw] lg:mt-[0.98958333333vw] lg:mr-[0.41666666666vw] object-contain">
+        </div>
+        <div
+        data-aos="fade" data-aos-duration="800" data-aos-delay="600"
+          class="products  before:content-[''] md:w-[32%] w-[49%] h-[130px] pt-[8px] pl-[8px] relative before:bg-[#6D6E71] before:w-[100%] before:h-[100%] before:absolute before:top-[0] before:left-[0] before:opacity-[0.1] overflow-hidden  lg:w-[22.65625vw] lg:pt-[2.08333333333vw]  lg:pl-[2.08333333333vw] lg:h-[19.4270833333vw] lg:mt-[-5.88541666667vw]">
+
+          <h5 class="text-[17px] leading-[22px] lg:text-[1.875vw]  text-[#191919] font-[400] lg:leading-[2.65625vw]">
+            Air Conditioning
+          </h5>
+          <img src="./assets/product-portfolio/wepik-photo-mode-20221114-13331.png" alt="" class="h-[112px] w-[112px] mx-[auto] lg:w-[16.8229166667vw] lg:h-[16.8229166667vw]
+            lg:absolute top-[3.95833333333vw] left-[7.5vw]  object-contain
+            ">
+        </div>
+        <div
+        data-aos="fade" data-aos-duration="800" data-aos-delay="800"
+          class="products  before:content-[''] relative  md:w-[32%] w-[49%] h-[130px] pt-[8px] pl-[8px] before:bg-[#6D6E71] before:w-[100%] before:h-[100%] before:absolute before:top-[0] before:left-[0] before:opacity-[0.1] overflow-hidden  lg:w-[33.4895833333vw] lg:pt-[2.08333333333vw]  lg:pl-[2.08333333333vw] lg:h-[26.8229166667vw] lg:mt-[-5.88541666667vw]">
+
+          <h5 class="text-[18px] leading-[22px] lg:text-[1.875vw]  text-[#191919] font-[400] lg:leading-[2.65625vw]">
+            Tires
+          </h5>
+          <img src="./assets/product-portfolio/wepik-photo-mode-20221114-125117.png" alt="" class="lg:w-[34.7916666667vw] lg:h-[22.9166666667vw] lg:min-w-[34.7916666667vw]
+            lg:absolute top-[4.73958333333vw] left-[4.375vw]  object-contain
+            ">
+        </div>
+        <div
+        data-aos="fade" data-aos-duration="800" data-aos-delay="1000"
+          class="products  before:content-[''] relative flex-col justify-between md:w-[32%] w-[49%] h-[130px] pt-[8px] pl-[8px] before:bg-[#6D6E71] before:w-[100%] before:h-[100%] before:absolute before:top-[0] before:left-[0] before:opacity-[0.1] overflow-hidden flex lg:w-[29.2708333333vw] lg:pt-[2.08333333333vw] justify-between lg:whitespace-nowrap lg:pl-[2.08333333333vw] lg:h-[15.625vw]">
+
+          <h5 class="text-[18px] leading-[22px] lg:text-[1.875vw]  text-[#191919] font-[400] lg:leading-[2.65625vw]">
+            Battery
+          </h5>
+          <img src="./assets/product-portfolio/Mask Group 16.png" alt=""
+            class="
+            w-[100px] h-[99px] mx-[auto]
+            lg:w-[18.6979166667vw] lg:h-[13.8541666667vw] lg:absolute top-[2.34375vw] left-[12.65625vw]  object-contain">
+        </div>
+        <div
+        data-aos="fade" data-aos-duration="800" data-aos-delay="400"
+          class="products  before:content-[''] md:w-[32%] w-[49%] h-[130px] pt-[8px] pl-[8px] relative before:bg-[#6D6E71] before:w-[100%] before:h-[100%] before:absolute before:top-[0] before:left-[0] before:opacity-[0.1] overflow-hidden  lg:w-[22.65625vw] lg:pt-[2.08333333333vw]  lg:pl-[2.08333333333vw] lg:h-[22.8645833333vw] lg:mt-[-7.39583333333vw]">
+
+          <h5 class="text-[18px] leading-[22px] lg:text-[1.875vw]  text-[#191919] font-[400] lg:leading-[2.65625vw]">
+            Engine Parts
+          </h5>
+          <img src="./assets/product-portfolio/pngwing.com (1).png" alt="" class="
+          w-[110px] h-[99px] mx-[auto]
+          lg:w-[20.4166666667vw] lg:h-[17.5520833333vw]
+            lg:absolute top-[5.3125vw] left-[4.21875vw]  object-contain
+            ">
+        </div>
+        <div
+        data-aos="fade" data-aos-duration="800" data-aos-delay="600"
+          class="products  before:content-[''] flex-col relative md:w-[32%] w-[49%] h-[130px] pt-[8px] pl-[8px] before:bg-[#6D6E71] before:w-[100%] before:h-[100%] before:absolute before:top-[0] before:left-[0]   before:opacity-[0.1] overflow-hidden flex lg:w-[33.4895833333vw] lg:pt-[2.08333333333vw] justify-between  lg:pl-[2.08333333333vw] lg:h-[16.25vw] ">
+
+          <h5 class="text-[18px] leading-[22px]  lg:text-[1.875vw]  text-[#191919] font-[400] lg:leading-[2.52604166667vw] 
+          lg:w-[12.5vw]
+          
+          ">
+            Timing Components
+          </h5>
+          <img src="./assets/product-portfolio/pngwing.com-removebg-preview.png" alt="" class="
+          w-[110px] h-[65px] mb-[8px] mx-[auto]
+          lg:w-[17.8645833333vw] 
+          lg:h-[13.125vw] object-contain
+           lg:mb-[0px] lg:absolute  lg:left-[285px]
+           ">
+        </div>
+        <div
+        data-aos="fade" data-aos-duration="800" data-aos-delay="800"
+          class="products  before:content-[''] flex-col relative md:w-[32%] w-[49%] h-[130px] pt-[8px] pl-[8px] before:bg-[#6D6E71] before:w-[100%] before:h-[100%] before:absolute before:top-[0] before:left-[0] before:opacity-[0.1] overflow-hidden flex lg:w-[29.2708333333vw] lg:pt-[2.08333333333vw] justify-between  lg:pl-[2.08333333333vw] lg:h-[21.7708333333vw] lg:mt-[-5.3125vw]">
+
+          <h5 class=" text-[18px] leading-[22px] lg:text-[1.875vw]  text-[#191919] font-[400] lg:leading-[2.52604166667vw]
+          
+          ">
+            Steering
+            <br>
+            & Suspension
+          </h5>
+          <img src="./assets/product-portfolio/pngegg.png" alt="" class="
+          w-[100px] h-[78px] mx-[auto]
+          lg:w-[18.3333333333vw] lg:h-[21.7708333333vw] object-contain
+          lg:absolute top-[1.19791666667vw] left-[13.0208333333vw] 
+          ">
+        </div>
+        <div
+        data-aos="fade" data-aos-duration="800" data-aos-delay="1000"
+          class="products  before:content-[''] md:ml-auto lg:ml-0 md:mr-[1%] lg:mr-0 md:w-[32%] w-[49%] h-[130px] pt-[8px] pl-[8px] relative before:bg-[#6D6E71] before:w-[100%] before:h-[100%] before:absolute before:top-[0] before:left-[0] before:opacity-[0.1] overflow-hidden  lg:w-[22.65625vw] lg:pt-[2.08333333333vw]  lg:pl-[2.08333333333vw] lg:h-[18.75vw] lg:mt-[-1.04166666667vw]">
+
+          <h5 class="text-[18px] leading-[22px] lg:text-[1.875vw]  text-[#191919] font-[400] lg:leading-[2.65625vw]">
+            Visibility
+          </h5>
+          <img src="./assets/product-portfolio/pngegg (1).png" alt="" class="
+          w-[100px] h-[100px] mx-[auto]
+          lg:w-[17.8125vw] lg:h-[17.8125vw] object-contain
+          lg:absolute top-[2.08333333333vw] left-[4.61145833333vw] 
+          ">
+        </div>
+        <div
+        data-aos="fade" data-aos-duration="800" data-aos-delay="1200"
+          class="products  before:content-['']  md:ml-[1%] lg:ml-0 relative flex-col md:mr-auto lg:mr-0  md:w-[32%] w-full h-[130px] pt-[8px] pl-[8px] before:bg-[#6D6E71] before:w-[100%] before:h-[100%] before:absolute before:top-[0] before:left-[0] before:opacity-[0.1] overflow-hidden flex lg:w-[63.8020833333vw] lg:pt-[2.08333333333vw] justify-between lg:whitespace-nowrap lg:pl-[2.08333333333vw] lg:h-[17.96875vw] lg:mt-[-0.10416666666vw]">
+
+          <h5 class="text-[18px] leading-[22px] lg:text-[1.875vw]  text-[#191919] font-[400] lg:leading-[2.65625vw]">
+            Accessories & Consumables
+          </h5>
+          <img src="./assets/product-portfolio/All-Car-Accessories-PNG-Image.png" alt="" class="  
+          w-[100px] mx-[auto]
+          lg:w-[25.8333333333vw] lg:h-[19.1145833333vw] object-contain
+            lg:absolute top-[-0.57291666666vw] left-[36.19791666666667vw] 
+            ">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="our-services py-[60px]  bg-[#191913] lg:h-[57.2916666667vw]  lg:flex  lg:items-center lg:py-[0]
+  relative
+  ">
+    <div class="os-services-main">
+      <div class="os-content w-[87%] text-center mx-[auto]">
+        <div class="os-ct-main lg:w-[55.9375vw] mx-[auto]  ">
+          <h1
+            class="hero-bg-text
+            text-[35px] leading-[40px] top-[5.5%]
+            lg:w-[59.8958333333vw] lg:text-[5.72916666667vw] text-[#000000] font-[600] opacity-[0.3] lg:tracking-[0.57291666666vw] lg:leading-[8.07291666667vw]   absolute lg:top-[4.94791666667vw] left-[50%] transform translate-x-[-50%] whitespace-nowrap">
+            OUR PROPOSITION</h1>
+          <h1 class="text-[22px] leading-[32px] mx-auto max-w-[600px] lg:text-[2.65625vw] text-[#FFFFFF] font-[500] lg:leading-[3.17708333333vw] lg:max-w-[unset]
+          uppercase
+          ">A TURNKEY SOLUTION FOR ALL YOUR MULTI-BRAND AUTO PART NEEDS</h1>
+
+        </div>
+      </div>
+      <div class="partnerscontainer pt-[40px] lg:pt-[5.20833333333vw] ">
+       
+        <div class="partners-main-col1 flex w-[87%] whitespace-nowrap  items-center mx-[auto]  gap-y-[30px]
+        justify-between lg:w-[87.5520833333vw] lg:flex lg:justify-between lg:items-center
+        lg:ml-[6.25vw] lg:mr-[6.19791666667vw] flex-wrap  lg:gap-y-[4.16666666667vw] 
+        lg:gap-x-[9.88541666667vw] lg:whitespace-normal
+        ">
+          <div
+            class="partners w-[26%] lg:w-[11.1458333333vw] flex justify-center gap-y-[10px] lg:gap-y-[0.72916666666vw] items-center flex-col flex justify-center items-center flex-col">
+            <img src="./assets/partners/Mask Group 4.svg" alt="" class="lg:w-[3.38541666667vw] lg:h-[3.38541666667vw]">
+            <h5 class="
+            font-[300] text-[#FFFFFF] text-[14px] leading-[20px] lg:leading-[1.875vw]  lg:text-[1.35416666667vw] 
+            ">Solutions</h5>
+          </div>
+          <div class="partners w-[26%] lg:w-[11.1458333333vw]  flex justify-center gap-y-[10px] lg:gap-y-[0.72916666666vw] items-center flex-col ">
+            <img src="./assets/partners/Mask Group 5.svg" alt="" class="lg:w-[3.38541666667vw] lg:h-[3.38541666667vw]">
+
+            <h5 class="
+              font-[300] text-[#FFFFFF] text-[14px] leading-[20px] lg:leading-[1.875vw]  lg:text-[1.35416666667vw] 
+              
+              ">Technology</h5>
+          </div>
+          <div class="partners w-[26%] lg:w-[11.1458333333vw] flex justify-center gap-y-[10px] lg:gap-y-[0.72916666666vw] items-center flex-col  ">
+            <img src="./assets/partners/Mask Group 6.svg" alt="" class="lg:w-[3.38541666667vw] lg:h-[3.38541666667vw]">
+
+            <h5 class="
+            font-[300] text-[#FFFFFF] text-[14px] leading-[20px] lg:leading-[1.875vw]  lg:text-[1.35416666667vw] 
+            ">Best People</h5>
+          </div>
+          <div class="partners w-[26%] lg:w-[11.1458333333vw] flex justify-center gap-y-[10px] lg:gap-y-[0.72916666666vw] items-center flex-col ">
+            <img src="./assets/partners/Mask Group 7.svg" alt="" class="lg:w-[3.38541666667vw] lg:h-[3.38541666667vw]">
+
+            <h5 class="
+            font-[300] text-[#FFFFFF] text-[14px] leading-[20px] lg:leading-[1.875vw]  lg:text-[1.35416666667vw] 
+            ">Market Disruptor</h5>
+          </div>
+          <div class="partners w-[26%] lg:w-[11.1458333333vw]  flex justify-center gap-y-[10px] lg:gap-y-[0.72916666666vw] items-center flex-col ">
+            <img src="./assets/partners/Mask Group 8.svg" alt="" class="lg:w-[3.38541666667vw] lg:h-[3.38541666667vw]">
+
+            <h5 class="
+            font-[300] text-[#FFFFFF] text-[14px] leading-[20px] lg:leading-[1.875vw]  lg:text-[1.35416666667vw] 
+            ">Innovation</h5>
+          </div>
+          <div class="partners w-[26%] lg:w-[11.1458333333vw]  flex justify-center items-center flex-col gap-y-[10px] lg:gap-y-[0.72916666666vw]">
+            <img src="./assets/partners/Mask Group 9.svg" alt="" class="lg:w-[3.38541666667vw] lg:h-[3.38541666667vw]">
+
+            <h5 class="
+              font-[300] text-[#FFFFFF] text-[14px] leading-[20px] lg:leading-[1.875vw]  lg:text-[1.35416666667vw] 
+              ">Private Label</h5>
+          </div>
+          <div class="partners w-[26%] lg:w-[11.1458333333vw] flex justify-center gap-y-[10px] lg:gap-y-[0.72916666666vw] items-center flex-col">
+            <img src="./assets/partners/Mask Group 10.svg" alt="" class="lg:w-[3.38541666667vw] lg:h-[3.38541666667vw]">
+
+            <h5 class="
+              font-[300] text-[#FFFFFF] text-[14px] leading-[20px] lg:leading-[1.875vw]  lg:text-[1.35416666667vw] 
+              ">Sustainability</h5>
+          </div>
+          <div class="partners w-[26%] lg:w-[11.1458333333vw] flex justify-center gap-y-[10px] lg:gap-y-[0.72916666666vw] items-center flex-col ">
+            <img src="./assets/partners/Mask Group 11.svg" alt="" class="lg:w-[3.38541666667vw] lg:h-[3.38541666667vw]">
+
+            <h5 class="
+            font-[300] text-[#FFFFFF] text-[14px] leading-[20px] lg:leading-[1.875vw]  lg:text-[1.35416666667vw] 
+            ">Partnership</h5>
+          </div>
+
+          <div class="partners w-[26%] lg:w-[11.1458333333vw]  flex justify-center gap-y-[10px] lg:gap-y-[0.83333333333vw] items-center flex-col">
+            <img src="./assets/partners/Mask Group 12.svg" alt="" class="lg:w-[3.38541666667vw] lg:h-[3.38541666667vw]">
+
+            <h5 class="
+              font-[300] text-[#FFFFFF] text-[14px] leading-[20px] lg:leading-[1.875vw]  lg:text-[1.35416666667vw] 
+              ">Market Experts</h5>
+          </div>
+          <div class="partners w-[26%] lg:w-[11.1458333333vw] flex justify-center gap-y-[10px] lg:gap-y-[0.83333333333vw] items-center flex-col">
+            <img src="./assets/partners/Mask Group 13.svg" alt="" class="lg:w-[3.38541666667vw] lg:h-[3.38541666667vw]">
+
+            <h5 class="
+              font-[300] text-[#FFFFFF] text-[14px] leading-[20px] lg:leading-[1.875vw]  lg:text-[1.35416666667vw] 
+              ">Data Driven</h5>
+          </div>
+
+          <div class="partners w-[26%] lg:w-[11.1458333333vw] flex justify-center gap-y-[10px] lg:gap-y-[0.83333333333vw] items-center flex-col ">
+            <img src="./assets/partners/Mask Group 14.svg" alt="" class="lg:w-[3.38541666667vw] lg:h-[3.38541666667vw]">
+
+            <h5 class="
+              font-[300] text-[#FFFFFF] text-[14px] leading-[20px] lg:leading-[1.875vw]  lg:text-[1.35416666667vw] 
+              ">Logistics</h5>
+          </div>
+
+          <div class="partners w-[26%] lg:w-[11.1458333333vw] flex justify-center gap-y-[10px] lg:gap-y-[0.83333333333vw] items-center flex-col  ">
+            <img src="./assets/partners/Mask Group 15.svg" alt="" class="lg:w-[3.38541666667vw] lg:h-[3.38541666667vw]">
+
+            <h5 class="
+            font-[300] text-[#FFFFFF] text-[14px] leading-[20px] lg:leading-[1.875vw]  lg:text-[1.35416666667vw] 
+            ">Service</h5>
+          </div>
+
+
+
+
+
+
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+  </section>
+
+ 
+
+  <section id="why-nap" class="why-nap pt-[60px]  md:h-[68.3854166667vw] block md:block relative md:pt-[12.5vw] ">
+    <div class="main-head-abs w-[87%] mx-[auto] md:w-[unset] md:mx-[unset]
+    mb-[35px] md:mb-[0px]
+    md:absolute top-[12.5vw] right-[0vw] z-[55]">
+      <div class="cntant-side relative w-[37.421875vw]     md:pt-[7.58072916667vw] flex flex-col md:gap-y-[1.26458333333vw]">
+        <h1
+          class="hero-bg-text text-[40px] whitespace-nowrap leading-[35px] mb-[-10px] top-[-43%] left-[-3%]
+          md:mb-[0px] md:text-[5.72916666667vw] text-[#000000] font-[600] opacity-[0.3] tracking-[0.57291666666vw] md:leading-[8.07291666667vw]   absolute md:top-[3.125vw] md:left-[-0.52083333333vw]  " >
+          WHY NAP ?</h1>
+        <h1 class="text-[22px] leading-[32px]  md:text-[2.65625vw] text-[#262626] font-[500] md:leading-[3.17708333333vw]
+  uppercase">WHY NAP ?</h1>
+        <span class="text-[14px] whitespace-nowrap leading-[20px] md:text-[1.35416666667vw] text-[#262626] md:leading-[2.39583333333vw]  md:whitespace-normal
+  
+  ">5 Reasons To Partner With NAP</span>
+
+      </div>
+    </div>
+
+    <div class="swiper mySwiper mb-[60px]
+     w-[87%] md:mb-[0px] md:w-[87.5vw] mx-auto md:mt-[-6vw]">
+      <div class="swiper-wrapper">
+
+    <div class="main-whnap md:w-[87.5vw] swiper-slide 
+    md:h-[49.6302083333vw] flex-col relative
+    ml-[auto] md:flex-row  flex justify-between gap-x-[3.30729166667vw] ">
+
+
+      <div class="img-side md:w-[53.0208333333vw] md:h-[38.125vw] relative">
+        <span class="blackOverlay bg-[#191919] absolute top-0 left-0 w-full h-full z-[5]">
+
+      </span>
+      <span class="overlay-car-whynp ">
+
+      </span>
+        <div class="img-sid-main ">
+       
+          <img src="./assets/Why Nap/323.png" alt="" class="w-[53.0208333333vw] h-[38.125vw]
+          ">
+
+        </div>
+      </div>
+
+      <div class="cntent-box h-[280px] justify-center    md:w-[35.46875vw] 
+      md:h-[22.9166666667vw] 
+      gap-y-[16px] relative z-[3]
+      bg-[#191919] 
+      text-[#FFFFFF]  flex flex-col px-[25px] md:p-[3.125vw] items-start text-left  
+  md:gap-y-[1.25vw]
+  md:absolute md:top-[26.885417vw] md:left-[40.7291666667vw]
+      ">
+<span class="bg-[#D30D2B] absolute top-0 left-0 w-full h-full z-[5] redOverlay">
+
+      </span>
+        <h5 class="text-[20px] leading-[22px] md:text-[1.875vw]  md:leading-[2.65625vw]">360° PRODUCT OFFER</h5>
+        <span class="text-[16px] leading-[20px] mt-[8px]  md:text-[1.35416666667vw] md:leading-[1.875vw] md:mt-[1.25vw]">With All-Makes Auto Parts</span>
+        <p class="text-[14px] leading-[20px] md:text-[0.9375vw] md:leading-[1.40625vw]">Our ambition is to fulfill all customers’ after sales
+          expectations. a wide, competitive and complete offering of: mechanical parts, electrical parts, batteries,
+          tires, accessories…</p>
+
+      </div>
+
+    </div>
+    <div class="main-whnap md:w-[87.5vw] swiper-slide activeInit 
+    md:h-[49.6302083333vw] flex-col relative
+    ml-[auto] md:flex-row  flex justify-between gap-x-[3.30729166667vw] ">
+
+
+      <div class="img-side md:w-[53.0208333333vw] md:h-[38.125vw] relative">
+        <span class="blackOverlay bg-[#191919] absolute top-0 left-0 w-full h-full z-[5]">
+
+      </span>
+      <span class="overlay-car-whynp ">
+
+      </span>
+        <div class="img-sid-main ">
+          <img src="./assets/Why Nap/modern-technology-cars-in-fair-show-2022-12-06-23-17-55-utc2.png" alt="" class="w-[53.0208333333vw] h-[38.125vw]
+          ">
+         
+
+        </div>
+      </div>
+
+      <div class="cntent-box h-[280px] justify-center   w-[100%]  
+      md:w-[35.46875vw] md:h-[22.9166666667vw] 
+      gap-y-[16px] relative z-[3]
+      bg-[#191919]   
+      text-[#FFFFFF]  flex flex-col px-[25px]   md:p-[3.125vw] items-start text-left  
+  md:gap-y-[1.25vw]
+  md:absolute md:top-[26.885417vw] md:left-[40.7291666667vw]
+      ">
+<span class="bg-[#D30D2B] absolute top-0 left-0 w-full h-full z-[5] redOverlay">
+
+      </span>
+        <h5 class="text-[20px] leading-[22px] md:text-[1.875vw]  md:leading-[2.65625vw]">CUSTOMIZED SALES SUPPORT</h5>
+        <span class="text-[16px] leading-[20px] mt-[8px]  md:text-[1.35416666667vw] md:leading-[1.875vw] md:mt-[1.25vw]">To Boost Our Customer’s Business</span>
+       
+          <div class="listp flex flex-col gap-y-[0.52083333333vw] pl-[1.04166666667vw]">
+            <p class="text-[14px] leading-[20px] md:text-[0.9375vw] md:leading-[1.40625vw] relative">Assistance From Our Sales Staff In The Field</p>
+            <p class="text-[14px] leading-[20px] md:text-[0.9375vw] md:leading-[1.40625vw] relative">Regular sales offers</p>
+            <p class="text-[14px] leading-[20px] md:text-[0.9375vw] md:leading-[1.40625vw] relative">Sustained marketing on your behalf</p>
+            <p class="text-[14px] leading-[20px] md:text-[0.9375vw] md:leading-[1.40625vw] relative">Loyalty program</p>
+            <p class="text-[14px] leading-[20px] md:text-[0.9375vw] md:leading-[1.40625vw] relative">Business meetings</p>
+          </div>
+
+      </div>
+
+    </div>
+    <div class="main-whnap md:w-[87.5vw] swiper-slide activeInit 
+    md:h-[49.6302083333vw] flex-col relative
+    ml-[auto] md:flex-row  flex justify-between gap-x-[3.30729166667vw] ">
+
+
+      <div class="img-side md:w-[53.0208333333vw] md:h-[38.125vw] relative">
+        <span class="blackOverlay bg-[#191919] absolute top-0 left-0 w-full h-full z-[5]">
+
+      </span>
+      <span class="overlay-car-whynp ">
+
+      </span>
+        <div class="img-sid-main ">
+       
+          <img src="./assets/Why Nap/dsadasd.png" alt="" class="w-[53.0208333333vw] h-[38.125vw]
+          ">
+
+        </div>
+      </div>
+
+      <div class="cntent-box h-[280px] justify-center   w-[100%]  md:w-[35.46875vw] md:h-[22.9166666667vw] 
+      gap-y-[16px] relative z-[3]
+      bg-[#191919]
+      text-[#FFFFFF]  flex flex-col px-[25px]  md:p-[3.125vw] items-start text-left  
+  md:gap-y-[1.25vw]
+  md:absolute md:top-[26.885417vw] md:left-[40.7291666667vw]
+      ">
+<span class="bg-[#D30D2B] absolute top-0 left-0 w-full h-full z-[5] redOverlay">
+
+      </span>
+        <h5 class="text-[20px] leading-[22px] md:text-[1.875vw]  md:leading-[2.65625vw]">WORLD CLASS LOGISTICS</h5>
+        <span class="text-[16px] leading-[20px] mt-[8px]  md:text-[1.35416666667vw] md:leading-[1.875vw] md:mt-[1.25vw]">To Provide Prompt & Regular Deleveries</span>
+        <div class="listp flex flex-col gap-y-[0.52083333333vw] pl-[1.04166666667vw]">
+          <p class="text-[14px] leading-[20px] md:text-[0.9375vw] md:leading-[1.40625vw] relative">Extensive local stock and warehouse facilities</p>
+          <p class="text-[14px] leading-[20px] md:text-[0.9375vw] md:leading-[1.40625vw] relative">Optimized storage</p>
+          <p class="text-[14px] leading-[20px] md:text-[0.9375vw] md:leading-[1.40625vw] relative">New products quickly brought to market</p>
+          <p class="text-[14px] leading-[20px] md:text-[0.9375vw] md:leading-[1.40625vw] relative">Multiple daily deliveries</p>
+          <p class="text-[14px] leading-[20px] md:text-[0.9375vw] md:leading-[1.40625vw] 
+          md:w-[29.0104166667vw]
+          relative">Syncron tool: best in class demand planning and forecasting tool to manage high availability and optimized inventory</p>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="main-whnap md:w-[87.5vw] swiper-slide  activeInit
+    md:h-[49.6302083333vw] flex-col relative
+    ml-[auto] md:flex-row  flex justify-between gap-x-[3.30729166667vw] ">
+
+
+      <div class="img-side md:w-[53.0208333333vw] md:h-[38.125vw] relative">
+        <span class="blackOverlay bg-[#191919] absolute top-0 left-0 w-full h-full z-[5]">
+
+      </span>
+      <span class="overlay-car-whynp ">
+
+      </span>
+        <div class="img-sid-main ">
+       
+          <img src="./assets/Why Nap/stock-photo-online-shopping-business-concept-selecting-shopping-cart-1651772413.png" alt="" class="w-[53.0208333333vw] h-[38.125vw]
+          ">
+
+        </div>
+      </div>
+
+      <div class="cntent-box h-[280px] justify-center   w-[100%]  md:w-[35.46875vw] md:h-[22.9166666667vw] 
+      gap-y-[16px] relative z-[3]
+      bg-[#191919] 
+      text-[#FFFFFF]  flex flex-col px-[25px]  md:p-[3.125vw] items-start text-left  
+  md:gap-y-[1.25vw]
+  md:absolute md:top-[26.885417vw] md:left-[40.7291666667vw]
+      ">
+<span class="bg-[#D30D2B] absolute top-0 left-0 w-full h-full z-[5] redOverlay">
+
+      </span>
+        <h5 class="text-[20px] leading-[22px] md:text-[1.875vw]  md:leading-[2.65625vw]">ONLINE CATALOGUE</h5>
+        <span class="text-[16px] leading-[20px] mt-[8px]  md:text-[1.35416666667vw] md:leading-[1.875vw] md:mt-[1.25vw]">To Simplify Ordering Multi-Brand Auto Parts</span>
+        <p class="text-[14px] leading-[20px] md:text-[0.9375vw] md:leading-[1.40625vw]">For our B2B & B2C customers.</p>
+
+      </div>
+
+    </div>
+    <div class="main-whnap md:w-[87.5vw] swiper-slide activeInit 
+    md:h-[49.6302083333vw] flex-col relative
+    ml-[auto] md:flex-row  flex justify-between gap-x-[3.30729166667vw] ">
+
+
+      <div class="img-side md:w-[53.0208333333vw] md:h-[38.125vw] relative">
+        <span class="blackOverlay bg-[#191919] absolute top-0 left-0 w-full h-full z-[5]">
+
+      </span>
+      <span class="overlay-car-whynp ">
+
+      </span>
+        <div class="img-sid-main ">
+          <img src="./assets/Why Nap/modern-technology-cars-in-fair-show-2022-12-06-23-17-55-utc.png" alt="" class="w-[53.0208333333vw] h-[38.125vw]
+          ">
+         
+
+        </div>
+      </div>
+
+      <div class="cntent-box h-[280px] justify-center    w-[100%]  md:w-[35.46875vw] md:h-[22.9166666667vw] 
+      gap-y-[16px] relative z-[3]
+      bg-[#191919]
+      text-[#FFFFFF]  flex flex-col px-[25px]  md:p-[3.125vw]  text-left  
+  md:gap-y-[1.25vw] md:items-start
+  md:absolute md:top-[26.885417vw] md:left-[40.7291666667vw]
+      ">
+<span class="bg-[#D30D2B] absolute top-0 left-0 w-full h-full z-[5] redOverlay">
+
+      </span>
+        <h5 class="text-[20px] leading-[22px] md:text-[1.875vw]  md:leading-[2.65625vw]">DEDICATED CUSTOMER SERVICE SUPPORT</h5>
+        <span class="text-[16px] leading-[20px] mt-[8px]  md:text-[1.35416666667vw] md:leading-[1.875vw] md:mt-[1.25vw]">To Keep Our Customer In Control</span>
+       
+          <div class="listp flex flex-col gap-y-[0.52083333333vw] pl-[1.04166666667vw]">
+            <p class="text-[14px] leading-[20px] md:text-[0.9375vw] md:leading-[1.40625vw] relative">Dedicated call center</p>
+            <p class="text-[14px] leading-[20px] md:text-[0.9375vw] md:leading-[1.40625vw] relative">Teams trained to help you choose the right part</p>
+            <p class="text-[14px] leading-[20px] md:text-[0.9375vw] md:leading-[1.40625vw] relative">No-quibble returns*</p>
+            
+          </div>
+
+      </div>
+
+    </div>
+    
+    
+    
+      </div>
+       <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+   
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </section>
+
+
+
+
+
+
+
+  <section id="contact-us" class="contact  lg:pb-[9.375vw]">
+    <div class="contact-main lg:w-[91.6666666667vw] mx-[auto] flex items-center 
+    flex-col lg:flex-row
+    lg:h-[49.3229166667vw]">
+      <div class="shop-sec w-[100%] h-[427px] lg:w-[45.8333333333vw] lg:h-[49.3229166667vw] lg:pt-[9.40364583333vw]  flex items-center lg:pb-[11.7708333333vw] 
+  relative
+  bg-[#D30D2B]">
+
+        <img src="./assets/shop secimg.png" alt="" class="w-[250px] h-[260px] 
+        bottom-[0]
+        lg:w-[22.9166666667vw] lg:h-[24.7395833333vw] absolute lg:bottom-[0]
+    lg:left-[0]
+    ">
+        <div class="main-shopsc w-[87%] text-center gap-y-[40px] flex flex-col justify-center items-center 
+    lg:gap-y-[6.27239583333vw] lg:w-[31.71875vw] mx-[auto]
+    ">
+          <div class="heading">
+            <h1 class="font-[500] text-[#FFFFFF] text-[22px] leading-[32px] lg:leading-[3.75vw] tracking-[0px]   
+        lg:text-[2.65625vw]">SHOP NOW</h1>
+            <p class="font-[300] text-[#FFFFFF] text-[14px] leading-[20px] 
+            mt-[8px]
+            lg:leading-[1.38020833333vw]  lg:text-[0.9375vw]
+        lg:mt-[1.26458333333vw]
+        ">“Ready To Shop?
+              <br>
+              Please Click The Link Below To Enter Our Online Store
+            </p>
+          </div>
+
+          <a href="/" class="font-[300] text-[#FFFFFF] px-[16px] py-[8px] text-[14px] leading-[20px] lg:leading-[1.875vw]  lg:text-[1.35416666667vw] 
+lg:px-[3.828125vw] lg:py-[0.703125vw] bg-[#191919] z-[99]
+"><button>Shop Now</button></a>
+        </div>
+      </div>
+      <div class="contact-sec w-[100%] py-[40px] bg-[#000000] lg:h-[49.3229166667vw] lg:w-[45.8333333333vw]    lg:py-[0px]
+      flex flex-col justify-center items-center 
+  
+  ">
+        <div class="main-contactsc w-[87%] gap-y-[40px] flex flex-col items-center lg:gap-y-[1.875vw] 
+        w-[100%]
+        ">
+          <div class="heading-contact text-center lg:w-[31.71875vw]">
+            <h1 class="font-[500] text-[#FFFFFF] text-[22px] leading-[32px] lg:leading-[3.75vw] tracking-[0px]   
+        lg:text-[2.65625vw]">GET IN TOUCH</h1>
+            <p class="font-[300] text-[#FFFFFF] 
+            mx-[auto] text-center mt-[8px]
+            w-[100%] text-[14px] leading-[20px] lg:leading-[1.40625vw]  lg:text-[0.9375vw] 
+        lg:mt-[1.26458333333vw] lg:w-[31.71875vw]
+        ">Have a question?
+              <br>
+              Don’t hesitate to contact us, Please fill in the form below and we will contact you
+            </p>
+          </div>
+         
+
+
+
+
+
+          <form id="myForm" class="w-[100%] px-[2.08333333333vw] w-[100%]  contact
+          flex flex-col gap-y-[30px]  lg:block
+          ">
+
+            <div
+              class="w-full flex flex-col text-[18px]   border-b-[1px] border-[#A5A5A5]
+              pb-[8px]
+              lg:pb-[0.64739583333vw]   lg:mb-[2.08333333333vw]">
+
+              <div
+                class="  bg-[transparent] text-[14px] leading-[20px] opacity-[0.7]  lg:text-[0.9375vw] text-[#FFFFFF]   relative font-[200] lg:leading-[1.45833333333vw]">
+                <div class="dropdown-btn flex justify-between cursor-pointer">
+                  <span required class="opacity-[0.7] ">Select Inquiry Type</span>
+
+                </div>
+
+                <ul
+                  class="contactDropdown dropdown z-[5]
+                  text-[14px] leading-[20px]
+                  lg:text-[0.9375vw] text-[#fff]  
+                  font-[200] lg:leading-[1.45833333333vw]
+                  bg-[#d30d2b] max-h-0 overflow-hidden absolute top-[145%] w-full left-0 transition-all duration-300">
+                  <li
+                    class=" py-[0.72916666666vw]  px-[1.45833333333vw] cursor-pointer  hover:bg- [#F7F7F7] transition-all duration-300 ">
+                    Business Opportunity
+                  </li>
+
+                  <li
+                    class=" py-[0.72916666666vw]  px-[1.45833333333vw] cursor-pointer  hover:bg- [#F7F7F7] transition-all duration-300   ">
+                    Customer Enquiry
+                  </li>
+                  <li
+                    class=" py-[0.72916666666vw]  px-[1.45833333333vw] cursor-pointer  hover:bg- [#F7F7F7] transition-all duration-300   ">
+                    General Request
+                  </li>
+
+                </ul>
+              </div>
+              <span class="text-[#EB041B] text-[14px]  den hidden lg:text-[0.9375vw]  lg:mt-[5px]">
+                This field is required.
+              </span>
+            </div>
+
+            <div class="name-email font-[200] text-[#FFFFFF]  lg:leading-[1.45833333333vw] gap-y-[30px]
+            flex-col lg:flex-row
+            lg:text-[0.94vw]
+w-[100%]  flex  lg:gap-x-[2.5vw] justify-between items-center lg:mb-[2.5vw]">
+              <div class="w-[100%]">
+                <input type="text" id="title" name="title" class="bg-[transparent]
+                text-[14px] leading-[20px] pb-[8px]
+                required   font-[200] text-[#FFFFFF] lg:leading-[1.45833333333vw]  lg:text-[0.9375vw]   placeholder:opacity-[0.7] border-b-[1px] border-[#A5A5A5] w-[100%] 
+                  outline-none lg:pb-[1.0375vw]" placeholder="Your Name" />
+                <span
+                  class="text-[#EB041B] top-[-5px] lg:top-[-12px] errorHidden hidden text-[14px] relative  top-[-15px]">
+                  This field is required.
+                </span>
+              </div>
+              <div class="w-[100%]">
+                <input type="email" id="email" name="email"
+                  class=" required  font-[200] text-[#FFFFFF]
+                  text-[14px] leading-[20px] pb-[8px]
+                  lg:leading-[1.45833333333vw]  lg:text-[0.9375vw]   placeholder:opacity-[0.7] w-[100%] bg-[transparent] border-b-[1px] border-[#A5A5A5] lg:pb-[0.62083333333vw] lg:pt-[0.41666666666vw] outline-none"
+                  placeholder="Your Email" />
+                <span
+                  class="text-[#EB041B] top-[-5px] lg:top-[-12px] errorHidden hidden text-[14px] relative  top-[-15px]">
+                  This field is required.
+                </span>
+              </div>
+            </div>
+
+
+            <div>
+              <input type="text" id="name" name="name"
+                class="bg-[transparent] border-b-[1px] 
+                text-[14px] leading-[20px] pb-[8px] 
+                border-[#A5A5A5]  required text-[#FFFFFF] lg:leading-[1.45833333333vw]  lg:text-[0.9375vw]  outline-none lg:pb-[0.63385416666vw] opacity-[0.7] w-full font-[200] lg:mb-[2.5vw]"
+                placeholder="Message Subject" />
+              <span
+                class="text-[#EB041B] text-[14px]  top-[-5px] lg:top-[-12px] dden hidden lg:text-[0.9375vw] relative  top-[-15px]">
+                This field is required.
+              </span>
+            </div>
+
+            <div class="text-[#FFFFFF] text-[14px] leading-[20px] 
+             lg:mb-[0px]
+            lg:leading-[1.45833333333vw]  lg:text-[0.9375vw] 
+          font-[200] ">
+              <textarea
+                class="bg-[transparent]   required   h-[25px]
+                pb-[8px]
+                lg:pb-[0.63385416666vw]      placeholder:opacity-[0.7] border-b-[1px] border-[#A5A5A5] w-full outline-none resize-none lg:h-[2.25vw]"
+                name="message" id="message" placeholder="Your Message" cols="" rows=""></textarea>
+              <span class="text-[#EB041B] ch errorHidden hidden  relative   ">
+                This field is required.
+              </span>
+            </div>
+            <div class="flex justify-center">
+              <button 
+            class="Send flex justify-center text-[14px] mt-[24px] leading-[20px] items-center font-[400] text-[#D30D2B] lg:leading-[1.40625vw]  lg:text-[0.94vw] lg:mt-[2.53854166667vw]">Send
+            <svg xmlns="http://www.w3.org/2000/svg" class="send-img w-[15px] 
+            h-[15px] ml-[6px]
+            lg:h-[1.5625vw] lg:w-[1.5625vw] lg:ml-[0.52083333333vw]"
+              width="30" height="30" viewBox="0 0 30 30">
+              <g id="Icon_feather-arrow-down-circle" data-name="Icon feather-arrow-down-circle"
+                transform="translate(30 0) rotate(90)">
+                <path id="Path_1" data-name="Path 1" d="M30,15A15,15,0,1,0,15,30,15,15,0,0,0,30,15Z"
+                  transform="translate(0 0)" fill="#d30d2b" />
+                <path id="Path_2" data-name="Path 2" d="M0,6,6,0l6,6" transform="translate(9 9)" fill="none"
+                  stroke="#262626" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                <path id="Path_3" data-name="Path 3" d="M0,12V0" transform="translate(15 9)" fill="#d30d2b"
+                  stroke="#262626" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+              </g>
+            </svg>
+
+
+          </button>
+            </div>
+          </form>
+
+
+        </div>
+
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="footer bg-[#191919] ">
+    <div class="social-links justify-center py-[25px] lg:h-[7.60416666667vw] flex lg:items-center lg:h-[7.60416666667vw]  lg:justify-center lg:py-[0px]">
+      <div class="social-links-main w-[87%]  lg:w-[unset] lg:flex  lg:items-center lg:flex-col lg:gap-y-[1.82291666667vw]">
+        <div class="social flex w-[100%] justify-around lg:flex  lg:items-center lg:gap-x-[2.13541666667vw]">
+          <a href=""><img src="./assets/social/Group 20.svg" alt="" class="w-[35px] h-[35px] lg:w-[2.39583333333vw] lg:h-[2.39583333333vw]"></a>
+          <a href=""><img src="./assets/social/Group 19.svg" alt="" class="w-[35px] h-[35px] lg:w-[2.39583333333vw] lg:h-[2.39583333333vw]"></a>
+          <a href=""><img src="./assets/social/Group 18.svg" alt="" class="w-[35px] h-[35px] lg:w-[2.39583333333vw] lg:h-[2.39583333333vw]"></a>
+          <a href=""><img src="./assets/social/Group 17.svg" alt="" class="w-[35px] h-[35px] lg:w-[2.39583333333vw] lg:h-[2.39583333333vw]"></a>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="copy-right bg-[#000000] lg:pt-[1.04166666667vw] lg:pb-[0.83333333333vw]
+      w-[100%] flex lg:h-[3.38541666667vw]
+      ">
+      <span class="font-[300]    mx-[auto] text-center py-[10px] w-[87%] text-[14px] leading-[20px] lg:w-[19.9479166667vw]
+        lg:text-[0.9375vw] text-[#FFFFFF]">2023 © National Auto Parts Company -NAP</span>
+    </div>
+  </section>
+
+
+
+
+
+  <script src="./javascript/global.js"></script>
+  <script src="./javascript/swiper-bundle.min.js"></script>
+  <script src="./javascript/lottie.js"></script>
+  <script src="./javascript/aos.js"></script>
+  <script src="./javascript/aosInit.js"></script>
+  <script src="./javascript/mySwiper.js"></script>
+
+ 
+
+</body>
+
+</html>

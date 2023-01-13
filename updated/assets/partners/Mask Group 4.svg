@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_58" data-name="Rectangle 58" width="40" height="40" transform="translate(209 4004)" fill="#ff8200"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_4" data-name="Mask Group 4" transform="translate(-209 -4004)" clip-path="url(#clip-path)">
+    <g id="_1._Customer_centric_solutions" data-name="1. Customer centric solutions" transform="translate(209 4004)">
+      <path id="Path_55" data-name="Path 55" d="M19.531,20.469H33.594v4.324a3.125,3.125,0,1,1,0,5.414v4.324H29.269a3.125,3.125,0,1,0-5.414,0H15.207a3.125,3.125,0,1,1-5.414,0H5.469V30.207a3.125,3.125,0,1,1,0-5.414V16.144a3.125,3.125,0,1,1,0-5.414V6.406H9.793a3.125,3.125,0,1,1,5.414,0h4.325V20.469Zm0,13.681V30.207a3.125,3.125,0,1,1,0-5.414V20.469H15.207a3.125,3.125,0,1,0-5.414,0H5.85" fill="none" stroke="#ff8200" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.562" fill-rule="evenodd"/>
+      <path id="Path_56" data-name="Path 56" d="M33.326,2.924a6.31,6.31,0,0,1,2.112,1.221l1.976-.866,1.8,3.126L37.482,7.683a6.366,6.366,0,0,1,0,2.44L39.219,11.4l-1.8,3.126-1.976-.866a6.311,6.311,0,0,1-2.112,1.221l-.238,2.143h-3.61l-.238-2.143a6.309,6.309,0,0,1-2.112-1.221l-1.976.866-1.8-3.126,1.737-1.278a6.36,6.36,0,0,1,0-2.44L23.347,6.4l1.8-3.126,1.976.866A6.311,6.311,0,0,1,29.24,2.924L29.478.781h3.61Z" fill="none" stroke="#ff8200" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.562" fill-rule="evenodd"/>
+      <path id="Path_57" data-name="Path 57" d="M31.283,11.159A2.256,2.256,0,1,0,29.027,8.9,2.26,2.26,0,0,0,31.283,11.159Z" fill="none" stroke="#ff8200" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.562" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>
